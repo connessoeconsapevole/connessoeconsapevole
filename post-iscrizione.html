@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Controlla la tua email — Connesso e Consapevole</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;1,9..144,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --ink: #1a1a18;
+    --ink-soft: #4a4a42;
+    --ink-faint: #8a8a7a;
+    --paper: #f7f5f0;
+    --accent: #1d6b4a;
+    --accent-light: #e8f2ec;
+    --line: rgba(26,26,24,0.12);
+  }
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 24px;
+  }
+  .card {
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 56px 48px;
+    max-width: 520px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.06);
+    animation: fadeUp 0.5s ease both;
+  }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .icon {
+    font-size: 3rem;
+    margin-bottom: 24px;
+    display: block;
+  }
+  h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    color: var(--ink);
+    margin-bottom: 16px;
+    line-height: 1.2;
+  }
+  .body-text {
+    font-size: 1rem;
+    color: var(--ink-soft);
+    font-weight: 300;
+    line-height: 1.8;
+    margin-bottom: 12px;
+  }
+  .highlight {
+    background: var(--accent-light);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    padding: 14px 18px;
+    text-align: left;
+    margin: 24px 0;
+    font-size: 0.95rem;
+    color: var(--accent);
+    font-weight: 400;
+    line-height: 1.7;
+  }
+  .spam-note {
+    font-size: 0.85rem;
+    color: var(--ink-faint);
+    font-weight: 300;
+    margin-top: 20px;
+    line-height: 1.7;
+  }
+  .spam-note a {
+    color: var(--ink-soft);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .footer-link {
+    margin-top: 32px;
+    font-size: 0.82rem;
+    color: var(--ink-faint);
+  }
+  .footer-link a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+  }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <span class="icon">📬</span>
+  <h1>Un click e il PDF è tuo.</h1>
+  <p class="body-text">Ho inviato una mail di conferma al tuo indirizzo.</p>
+  <p class="body-text">Aprila adesso — trovi un link che ti porta direttamente al PDF <em>"20 anni di formazione su reti, Office e AI, con contenuti concreti per iniziare subito ad apprendere"</em>.</p>
+
+  <div class="highlight">
+    Una cosa sola che ti chiedo: aprila adesso, non tra un'ora. Le mail di conferma finiscono in spam o si perdono tra le altre — e sarebbe un peccato perdere qualcosa che hai già scelto di ricevere.
+  </div>
+
+  <p class="spam-note">
+    Non la trovi? Controlla spam e promozioni. Se non è lì entro 5 minuti,
+    <a href="https://www.linkedin.com/in/edoardofacchini" target="_blank">scrivimi su LinkedIn</a>.
+  </p>
+
+  <p class="footer-link">
+    <strong>Edoardo Facchini</strong> ·
+    <a href="https://www.linkedin.com/in/edoardofacchini" target="_blank">linkedin.com/in/edoardofacchini</a>
+  </p>
+</div>
+
+</body>
+</html>

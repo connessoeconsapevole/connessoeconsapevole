@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Benvenuto in Connesso e Consapevole</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;1,9..144,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --ink: #1a1a18;
+    --ink-soft: #4a4a42;
+    --ink-faint: #8a8a7a;
+    --paper: #f7f5f0;
+    --accent: #1d6b4a;
+    --accent-light: #e8f2ec;
+    --accent-mid: #2d9e6f;
+    --amber: #b87a1a;
+    --amber-light: #fdf4e3;
+    --line: rgba(26,26,24,0.12);
+  }
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    min-height: 100vh;
+    padding: 40px 24px;
+  }
+  .container {
+    max-width: 560px;
+    margin: 0 auto;
+    animation: fadeUp 0.5s ease both;
+  }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .brand {
+    font-family: 'Fraunces', serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--ink-faint);
+    letter-spacing: 0.02em;
+    margin-bottom: 40px;
+    display: block;
+    text-align: center;
+  }
+  .hero-icon {
+    font-size: 3rem;
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    color: var(--ink);
+    text-align: center;
+    margin-bottom: 32px;
+    line-height: 1.2;
+  }
+
+  /* PDF DOWNLOAD */
+  .pdf-box {
+    background: var(--amber-light);
+    border: 1.5px solid rgba(184,122,26,0.3);
+    border-radius: 16px;
+    padding: 28px;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+  .pdf-label {
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--amber);
+    margin-bottom: 10px;
+  }
+  .pdf-title {
+    font-family: 'Fraunces', serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--ink);
+    line-height: 1.4;
+    margin-bottom: 20px;
+    letter-spacing: -0.01em;
+  }
+  .btn-download {
+    display: inline-block;
+    padding: 14px 32px;
+    background: var(--accent);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background 0.2s, transform 0.1s;
+  }
+  .btn-download:hover {
+    background: #155a3c;
+    transform: translateY(-1px);
+  }
+
+  /* DIVIDER */
+  .divider {
+    width: 40px;
+    height: 2px;
+    background: var(--line);
+    margin: 32px auto;
+    border-radius: 2px;
+  }
+
+  /* ABOUT */
+  .about-card {
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 28px;
+    margin-bottom: 24px;
+  }
+  .about-card p {
+    font-size: 0.95rem;
+    color: var(--ink-soft);
+    font-weight: 300;
+    line-height: 1.8;
+    margin-bottom: 12px;
+  }
+  .about-card p:last-child { margin-bottom: 0; }
+  .about-card strong { color: var(--ink); font-weight: 500; }
+
+  /* NEXT */
+  .next-note {
+    background: var(--accent-light);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 32px;
+    font-size: 0.9rem;
+    color: var(--accent);
+    font-weight: 400;
+    line-height: 1.7;
+    text-align: center;
+  }
+
+  /* CONTACT */
+  .contact {
+    text-align: center;
+    font-size: 0.88rem;
+    color: var(--ink-soft);
+    font-weight: 300;
+    line-height: 1.7;
+    margin-bottom: 40px;
+  }
+  .contact a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .contact a:hover { text-decoration: underline; }
+
+  footer {
+    border-top: 1px solid var(--line);
+    padding-top: 24px;
+    text-align: center;
+    font-size: 0.78rem;
+    color: var(--ink-faint);
+  }
+  footer a { color: var(--ink-faint); text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <span class="brand">Connesso e Consapevole</span>
+
+  <span class="hero-icon">✅</span>
+  <h1>Iscrizione confermata.</h1>
+
+  <div class="pdf-box">
+    <p class="pdf-label">Il tuo PDF è in arrivo</p>
+    <p class="pdf-title">"20 anni di formazione su reti, Office e AI, con contenuti concreti per iniziare subito ad apprendere"</p>
+    <p class="lm-desc" style="font-size:0.95rem; color:#4a4a42; font-weight:300; line-height:1.7;">Controlla la tua email — ti ho appena inviato il link per scaricarlo. Se non lo trovi, controlla spam e promozioni.</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="about-card">
+    <p>Sono <strong>Edoardo Facchini</strong>. Insegno reti, Office e sicurezza digitale da vent'anni — in aziende e scuole. Sto costruendo il percorso su AI literacy con lo stesso metodo: parto dal concreto, non dalla teoria.</p>
+    <p>Con <strong>Connesso e Consapevole</strong> ricevi ogni due settimane un tema digitale affrontato sul campo — non riassunti di quello che puoi trovare altrove.</p>
+  </div>
+
+  <div class="next-note">
+    📅 Il prossimo numero arriva tra due settimane.
+  </div>
+
+  <p class="contact">
+    Se nel frattempo hai domande o vuoi sapere come posso aiutarti con un percorso formativo,
+    scrivimi su <a href="https://www.linkedin.com/in/edoardofacchini" target="_blank">LinkedIn</a>.
+  </p>
+
+  <footer>
+    © 2025 Edoardo Facchini ·
+    <a href="privacy.html">Informativa sulla privacy</a>
+  </footer>
+
+</div>
+
+</body>
+</html>
